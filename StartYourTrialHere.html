@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        
+    <title>StartYourTrialHere</title>
+</head>
+
+<body>
+    <div class="StartYourTrialHere-page-os">
+        <section class="header-os">
+            <div class="container-os">
+                <div class="header-data-os">
+                    <div class="header-brand-os">
+                        <a href="#">
+                            <img src="https://cdn.shopify.com/s/files/1/0590/4354/5140/files/ValeryTrading-LogoWhite.png?v=1652347194&width=250"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="valeria-mishchenko-login-os">
+                        <div class="valeria-image-os">
+                            <img src="https://cdn.shopify.com/s/files/1/0590/4354/5140/files/Image_8_300x300.png?v=1652098850"
+                                alt="">
+                        </div>
+
+                        <select name="account-login" id="account-login">
+                            <option value="Valeria-Mishchenko">Valeria-Mishchenko</option>
+                            <option value="Valeria-Mishchenko1">Valeria-Mishchenko1</option>
+                            <option value="Valeria-Mishchenko2">Valeria-Mishchenko2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="StartYourTrialHere-nav-allcontent">
+            <section class="left-navbar-os">
+                <div class="left-navbar-data-os">
+                    <div onclick="toggle_button_os()" class="mobile-toggle-button-os">
+                        <div class="toggle-line-1"></div>
+                        <div class="toggle-line-1"></div>
+                        <div class="toggle-line-1"></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/expert.png" alt="" />Expert Advisors</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/license.png" alt="" />Licenses</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/discount.png" alt="" />Discounts</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/account.png" alt="" />Account</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/guide.png" alt="" />Guide</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/broker.png" alt="" />Brokers</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/vsp.png" alt="" />VSP</a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="nav-ico" src="img/logout.png" alt="" />Log-out</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="StartYourTrialHere-form-os">
+                <section class="login-form-section-os">
+                    <div class="login-form-data-os">
+                        <div class="cross-btn-os">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="25" viewBox="0 0 27 25"
+                                fill="none">
+                                <line x1="2.67764" y1="1.32236" x2="25.6776" y2="24.3224" stroke="#A5A5A5"
+                                    stroke-width="1.91667" />
+                                <line y1="-0.958333" x2="32.5269" y2="-0.958333"
+                                    transform="matrix(-0.707107 0.707107 0.707107 0.707107 25 2)" stroke="#A5A5A5"
+                                    stroke-width="1.91667" />
+                            </svg>
+                        </div>
+
+                        <div class="StartYourTrialHere-form-data-os">
+                            <div class="login-form-heading">
+                                <h1>Start Your Trial Here</h1>
+                                <p>In order to activate your license, please fill the following form and allow me
+                                    <span>24 business hours </span>to complete the process
+                                </p>
+                            </div>
+                            <form class="">
+                                <div class="login-form-os">
+                                    <input type="email" placeholder="useremail@gmail.com">
+                                </div>
+                                <div class="login-form-os">
+                                    <input type="text" placeholder="Waka Waka-MetaTrader4">
+                                </div>
+                                <div class="login-form-os">
+                                    <input type="number" placeholder="MetaTrader Account Number">
+                                </div>
+                                <div class='login-btn-os'>
+                                    <button type='submit'>Activate license</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Mobile Navbar toggle button js
+    function toggle_button_os() {
+        let change = document.querySelector('.left-navbar-data-os ul');
+        change.classList.toggle('left-navbar-data-os-ul-active');
+    }
+
+    // 
+    $(document).ready(function () {
+        // Navbar Active Link js
+        $('.left-navbar-data-os ul li').on('click', function () {
+            $('.left-navbar-data-os ul li').removeClass('navbar-link-active');
+            $(this).addClass('navbar-link-active');
+            console.log('working');
+        });
+
+        // $(window).on('load', function () {
+        //     $(".metaLicenses-card-reg-no-os li").addClass('active');
+        // });
+    });
+</script>
+
+</html>
