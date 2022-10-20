@@ -1,8 +1,40 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url('https://cdn.shopify.com/s/files/1/0590/4354/5140/files/Roboto-Regular.ttf?v=1666189600') format("opentype");
+   }
+
+
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 	background: #e8e8ea;
+    font-family: "Roboto-Regular";
+}
+
+.metatrading4Licenses-page-os {
+    position: relative;
+}
+
+.pl-0-os {
+    padding-left: 0 !important;
+}
+
+.pr-0-os {
+    padding-right: 0 !important;
+}
+.ml-0-os {
+    margin-left: 0 !important;
+}
+
+.mr-0-os {
+    margin-right: 0 !important;
+}
+
+.border-0-os {
+    border: none !important;
 }
 
 /* Header starts */
@@ -21,10 +53,14 @@ body {
     align-items: center;
 }
 .header-os {
-    background: #24242C;
+    background: #1E1F24;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
 }
 .container-os {
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 .header-os .valeria-mishchenko-login-os select {
     border: none;
@@ -35,7 +71,7 @@ body {
     color: #fff;
 }
 .header-os .valeria-mishchenko-login-os select option {
-    background: #24242C;
+    background: #1E1F24;
 }
 select:focus-visible, input:focus-visible {
     outline: none;
@@ -58,7 +94,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Left navbar starts */
 .left-navbar-data-os ul {
     list-style: none;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: 0;
 }
 
@@ -67,33 +103,34 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 20px;
     text-decoration: none;
     color: #fff;
-	font-family: "arial";
+	font-family: "Roboto-Regular";
 	display:flex;
 	flex-wrap:wrap;
 	align-items:center;
-    padding: 1rem;
+    padding: 14px 1rem;
 }
 .left-navbar-data-os ul li {
-    margin-bottom: 10px;
-}
-.left-navbar-data-os ul li:hover {
-    background: #363636;
-    border-radius: 8px;
+    /* margin-bottom: 10px; */
 }
 .navbar-link-active {
     background: #363636;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 .left-navbar-os {
-    background: #24242C;
-    width: 15%;
-    height: 100vh;
-    float: left;
+    background: #1E1F24;
+    width: 20%;
+    /* min-height: 1080px; */
+    /* float: left; */
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 72px;
+    height: 100%;
 }
 .left-navbar-data-os ul li a img {
-    filter: invert(1);
-    width: 20px;
-    height: 20px;
+    /* filter: invert(1); */
+    width: 24px;
+    height: 24px;
     padding-right: 10px;
 }
 /* Left navbar ends */
@@ -101,13 +138,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*------Right Tab Starts------*/
 
-section.right-content-os {
+/* section.right-content-os {
     background: #e8e8ea;
     float: left;
     width: 85%;
     height: auto;
 	padding-bottom:30px;
-}
+} */
 section.right-content-os .tab_source h2.tab_head span > img {
     width: auto;
     height: 30px;
@@ -118,13 +155,14 @@ section.right-content-os .tab_source h2 {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    padding: 0 3rem;
+    padding: 0 3rem 1.5rem;
+    margin: 0;
 }
 section.right-content-os .tab_source h2 > p {
     margin: 0;
     font-size: 20px;
     line-height: 24px;
-    font-family: "arial";
+    font-family: "Roboto-Regular";
 }
 section.right-content-os .tab_source .metaTrading-card-heading-os {
     font-weight: 400;
@@ -155,10 +193,10 @@ section.right-content-os .tab_box .tab_btn button span {
 section.right-content-os .tab_row .tab_inner_col {
     max-width: 18%;
     padding: 0 10px;
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
-	margin-bottom:2rem;
-    justify-content: flex-start;
+    margin-bottom: 2rem;
+    justify-content: center;
 }
 section.right-content-os .tab_row .tab_col {
     max-width: 90%;
@@ -168,14 +206,30 @@ section.right-content-os .tab_row .tab_col {
 }
 section.right-content-os .tab_row {
     background: #ffffff;
-    padding: 1.5rem 0.5rem 0;
-    max-width: 95%;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 0 0 5px #ccc;
+    /* max-width: 80%; */
+    /* margin-left: auto; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 5px #ccc; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #ccc;
+}
+section.right-content-os {
+    padding-top: 4.5rem;
+    max-width: 80%;
+    margin-left: auto;
+}
+.metaLicenses-right-data-os-new {
+    /* background: #ffffff; */
+    /* max-width: 80%; */
+    /* margin-left: auto; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 5px #ccc; */
+    padding: 2rem;
 }
 section.right-content-os .col-img {
     padding: 0;
@@ -187,7 +241,7 @@ section.right-content-os .tab_row .tab_col .tab_box p {
     line-height: 20px;
     margin: 0;
     padding-top: 1rem;
-	font-family: "arial";
+	font-family: "Roboto-Regular";
 }
 section.right-content-os .tab_row .tab_col .tab_box .tab_screen_img {
     padding: 4rem 0;
@@ -249,19 +303,24 @@ section.right-content-os .tab_box .tab_btn button img {
 
 /* MetaTrading4 Licenses Page starts */
 .metaLicenses-right-content-os {
-    width: 85%;
+    width: 80%;
     background: #E8E8EA;
-    padding: 1.5rem 2.5rem;
+    padding-top: 4.5rem;
+    margin-left: auto;
+}
+.metaLicenses-right-data-os {
+    padding: 2rem;
 }
 .metatrandingLicenses-nav-allcontent {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .metaLicenses-heading-os>h2 {
     margin: 0;
     font-size: 20px;
     line-height: 24px;
-    font-family: "arial";
+    font-family: "Roboto-Regular";
     font-weight: 400;
 }
 .metaLicenses-heading-os>div>img {
@@ -289,14 +348,14 @@ section.right-content-os .tab_box .tab_btn button img {
 }
 .metaLicenses-cardData-heading-os>div>img {
     width: auto;
-    height: 30px;
+    height: 28px;
     display: flex;
 }
 .metaLicenses-cardData-heading-os h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
-    font-family: "arial";
+    font-family: "Roboto-Regular";
     font-weight: 600;
 }
 .metaLicenses-card-1-os>h3 {
@@ -306,13 +365,13 @@ section.right-content-os .tab_box .tab_btn button img {
     line-height: 20px;
     margin: 0;
     padding: 1rem;
-    font-family: "arial";
-    background: #24242C;
+    font-family: "Roboto-Regular";
+    background: #1E1F24;
     border-radius: 20px 20px 0 0;
 }
 
 .metaLicenses-cardData-1-os {
-    width: 20%;
+    width: 19.8%;
     border-right: 2px solid #eee;
     margin: 1.5rem 0;
 }
@@ -322,8 +381,8 @@ section.right-content-os .tab_box .tab_btn button img {
 .metaLicenses-card-buttons-os a {
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Arial';
-    font-weight: 500;
+    font-family: "Roboto-Regular";
+    font-weight: 600;
     width: 100%;
     height: 40px;
     display: flex;
@@ -332,17 +391,21 @@ section.right-content-os .tab_box .tab_btn button img {
     justify-content: center;
     gap: 8px;
     text-decoration: none;
-    color: #000;
+    color: #333;
 }
 .metaLicenses-card-buttons-os a:hover {
     opacity: 0.8;
+}
+.metaLicenses-card-buttons-os a>div {
+    display: flex;
+    align-items: center;
 }
 .remove-license-os {
     background: #7CCFF9;
     border-radius: 0 0 20px 20px;
 }
 .metaLicenses-card-1-os {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
 }
 .metaLicenses-card-reg-no-os li::marker {
     color: #ababab;
@@ -355,7 +418,7 @@ section.right-content-os .tab_box .tab_btn button img {
     padding-bottom: 8px;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Arial';
+    font-family: "Roboto-Regular";
     font-weight: 400;
     cursor: pointer;
     position: relative;
@@ -364,22 +427,26 @@ section.right-content-os .tab_box .tab_btn button img {
     position: absolute;
     content: "";
     width: 100%;
-    height: 1px;
+    height: 2px;
     background: #ababab;
     left: -18px;
     bottom: 0;
+    opacity: 0.3;
 }
 .metaLicenses-card-reg-no-os {
     min-height: 300px;
     padding-left: 2rem;
+    overflow-y: auto;
+    height: 300px;
 }
 .metaLicenses-cardData-row-os {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     background: #fff;
     border-radius: 20px;
-    padding: 0 1.5rem;
+    padding: 0;
 }
 .metaLicenses-card-1-os h3 {
     color: #ffffff;
@@ -387,14 +454,19 @@ section.right-content-os .tab_box .tab_btn button img {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
-    /* padding: 1.5rem 1rem; */
-    font-family: "arial";
-    background: #24242C;
+    font-family: "Roboto-Regular";
+    background: #1E1F24;
     border-radius: 20px 20px 0 0;
     height: 68px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+}
+.metaLicenses-card-1-os h3>span {
+    color: #59c783;
+    font-family: "Roboto-Regular";
+    font-weight: 600;
 }
 .metaLicenses-card-shadow-os {
     box-shadow: 0 0 10px #777777;
@@ -422,6 +494,14 @@ section.right-content-os .tab_box .tab_btn button img {
 }
 .no.detail-bg-os {
     background: transparent;
+}
+
+.metaLicenses-card-reg-no-os li:before {
+    content: 'copied';
+    font-size: 12px;
+    position: absolute;
+    right: 18px;
+    display: none;
 }
 /* MetaTrading4 Licenses Page ends */
 
@@ -458,7 +538,7 @@ section.right-content-os .tab_box .tab_btn button img {
 }
 
 .login-form-heading h1 {
-    font-family: 'arial';
+    font-family: "Roboto-Regular";
     font-weight: 600;
     font-size: 32px;
     line-height: 38px;
@@ -471,7 +551,7 @@ section.right-content-os .tab_box .tab_btn button img {
     line-height: 20px;
     color: #fff;
     margin: 0 auto;
-    font-family: 'arial';
+    font-family: "Roboto-Regular";
     width: 80%;
 }
 
@@ -506,7 +586,7 @@ section.right-content-os .tab_box .tab_btn button img {
     box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'arial';
+    font-family: "Roboto-Regular";
     text-align: center;
     font-weight: 400;
     color: #000;
@@ -517,7 +597,7 @@ section.right-content-os .tab_box .tab_btn button img {
 }
 
 .login-btn-os button {
-    font-family: 'arial';
+    font-family: "Roboto-Regular";
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
@@ -536,15 +616,15 @@ section.right-content-os .tab_box .tab_btn button img {
     justify-content: center;
     margin: 1.5rem auto 0;
     cursor: pointer;
+    padding-top: 4px;
 }
 
 .login-form-section-os {
     display: flex;
-    height: 100vh;
+    height: 90.5vh;
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* background: #24242C; */
 }
 
 .singup-accounts-os {
@@ -592,12 +672,16 @@ section.right-content-os .tab_box .tab_btn button img {
 
 .StartYourTrialHere-nav-allcontent {
     display: flex;
-    background: #24242C;
+    background: #1E1F24;
+    position: relative;
 }
 .StartYourTrialHere-form-os {
     width: 85%;
     background: #fff;
     border-radius: 10px;
+    margin-left: auto;
+    position: relative;
+    top: 4.6rem;
 }
 .cross-btn-os {
     display: flex;
@@ -611,6 +695,16 @@ section.right-content-os .tab_box .tab_btn button img {
 .cross-btn-os svg {
     width: 20px;
     height: 20px;
+}
+.custom-border-os-5 {
+    border: none;
+}
+.custom-margin-os-1 {
+    margin-left: 1rem;
+    padding-left: 0;
+}
+.custom-margin-os-5 {
+    margin-right: 1rem;
 }
 
 /* StartYourTrialHere Page style starts */
@@ -647,11 +741,18 @@ section.right-content-os .tab_box .tab_btn button img {
 	section.right-content-os .tab_row {
 		max-width: 90%;
 	}
-    .metaLicenses-cardData-row-os {
-        flex-wrap: wrap;
-    }
     .metaLicenses-cardData-1-os {
         width: 24%;
+    }
+    .custom-border-os-4 {
+        border: none;
+    }
+    .custom-margin-os-5 {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .custom-margin-os-4 {
+        margin-right: 1rem;
     }
 }
 
@@ -672,8 +773,33 @@ section.right-content-os .tab_box .tab_btn button img {
     .metaLicenses-cardData-1-os {
         width: 33%;
     }
+    .metaLicenses-right-content-os {
+        width: 75%;
+    }
+    .StartYourTrialHere-form-os {
+        width: 75%;
+    }
+    .custom-border-os-4 {
+        border-right: 2px solid #eee;
+    }
+    .custom-border-os-3 {
+        border: none;
+    }
+    .custom-padding-os-3 {
+        padding-right: 1rem;
+    }
+    .custom-margin-os-3 {
+        margin-right: 1rem;
+    }
+    .custom-margin-os-4 {
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+    .custom-margin-os-5 {
+        margin-right: 1rem;
+        margin-left: 0;
+    }
 }
-
 @media screen and (max-width:991px) {
 	section.right-content-os .tab_row  .tab_inner_col {
 		max-width: 29.5%;
@@ -689,40 +815,59 @@ section.right-content-os .tab_box .tab_btn button img {
 		font-size: 14px;
 		line-height: 18px;
 	}
-    .container-os {
-        padding: 0 1rem;
-    }
     .left-navbar-data-os ul {
         padding: 1rem;
     }
-    .metaLicenses-cardData-row-os {
-        padding: 0 1rem;
-    }
     .metaLicenses-cardData-1-os {
         width: 49%;
+    }
+    .custom-border-os-2 {
+        border: none;
+    }
+    .custom-border-os-3 {
+        border-right: 2px solid #eee;
+    }
+    .custom-border-os-4 {
+        border: none;
+    }
+    .custom-margin-os-2 {
+        margin-right: 1rem;
+    }
+    .custom-margin-os-3 {
+        margin-right: 0rem;
+        margin-left: 1rem;
+    }
+    .custom-margin-os-4 {
+        margin-right: 1rem;
+        margin-left: 0rem;
+    }
+    .custom-margin-os-5 {
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 }
 
 @media screen and (max-width:768px) {
     .metaLicenses-right-content-os {
-        width: 85%;
-        background: #E8E8EA;
+        padding-top: 8rem;
+        width: 100%;
+    }
+    .metaLicenses-right-data-os {
         padding: 1.5rem;
     }
     .metaLicenses-cardData-heading-os h2 {
         font-size: 18px;
         line-height: 24px;
     }
-}
-
-@media screen and (max-width:768px) {
+    .left-navbar-os {
+		width: 100%;
+        min-height: unset;
+        height: auto;
+        top: 65px;
+    }
 	section.right-content-os .tab_row .tab_inner_col {
 		max-width: 45.2%;
 		justify-content: center;
-	}
-    .left-navbar-os {
-		width: 100%;
-		height: auto;
 	}
 	section.right-content-os {
 		width: 100%;
@@ -733,66 +878,129 @@ section.right-content-os .tab_box .tab_btn button img {
     }
     .mobile-toggle-button-os {
         background: #fff;
-        padding: 1rem;
+        padding: 0 1.5rem;
+        height: 52px;
+        display: flex;
+        align-items: center;
     }
-    .mobile-toggle-button-os>div {
+    .mobile-toggle-lines>div {
         width: 30px;
         height: 4px;
-        background: #24242C;
-        border-radius: 2px
+        background: #1E1F24;
+        border-radius: 2px;
+        transition: 0.3s;
     }
-    .toggle-line-1 {
+    .hide {
+        display: none;
+    }
+    .line-1-rotate-os {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    .line-2-rotate-os {
+        transform: rotate(-45deg) translate(0px, -2px);
+    } 
+    
+    .mobile-toggle-lines {
+        width: max-content;
+    }
+    .line-2-os {
         margin: 4px 0;
     }
     .left-navbar-data-os ul {
         transform: translateX(-101%);
         position: absolute;
         z-index: 11;
-        background: #24242C;
-        width: 100%;
+        background: #1E1F24;
+        width: 94%;
         transition: 0.3s;
+        padding: 1rem 1.5rem;
     }
     .left-navbar-data-os-ul-active {
         transform: translateX(0%) !important;
     }
-    .metaLicenses-cardData-1-os {
-        border-right: none;
+    .header-brand-os>a>img {
+        max-width: 190px;
+        display: flex;
     }
-    
-    
+    .header-os .valeria-mishchenko-login-os select {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .container-os {
+        padding: 0 1.5rem;
+    }
+    .StartYourTrialHere-form-os {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width:640px) {
-	/* .left-navbar-os {
-		width: 100%;
-		height: auto;
-	}
-	section.right-content-os {
-		width: 100%;
-	}
-    .metatrandingLicenses-nav-allcontent {
-        display: flex;
-        flex-wrap: wrap;
-    }	 */
-}
 @media screen and (max-width:576px) {
     .metaLicenses-cardData-1-os {
         width: 100%;
+        border-right: none;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    .metaLicenses-cardData-1-os:last-child {
+        padding-bottom: 0;
+    }
+    .metaLicenses-cardData-row-os {
+        padding: 2rem 1rem;
     }
     .metaLicenses-right-content-os {
-        width: 100%;
-        padding: 1.5rem 1rem;
+        padding-top: 6rem;
     }
-    .metaLicenses-cardData-1-os {
-        margin: 1.5rem 0;
+    .metaLicenses-right-data-os {
+        padding: 1.5rem 1rem;
     }
     .metaLicenses-card-1-os {
         padding: 0;
     }
-    .metaLicenses-cardData-1-os {
-        margin: 0;
-        padding: 1rem 0;
-    }    
+    .mobile-toggle-lines>div {
+        width: 24px;
+        height: 3px;
+    }
+    .mobile-toggle-button-os {
+        padding: 0 1rem;
+    }
+    .left-navbar-data-os ul li a {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px;
+    }
+    .header-brand-os>a>img {
+        max-width: 150px;
+    }
+    .container-os {
+        padding: 0 1rem;
+    }
+    .left-navbar-data-os ul {
+        padding: 1rem;
+    }
+    .header-os .header-data-os {
+        padding: 12px 0;
+    }
+    .left-navbar-os {
+        top: 58px;
+    }
+    .custom-margin-os-1 {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .custom-margin-os-2 {
+        margin-right: 0;
+    }
+    .custom-margin-os-3 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .custom-margin-os-4 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .line-1-rotate-os {
+        transform: rotate(45deg) translate(1px, 2px);
+    }
 }
 
 
